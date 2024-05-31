@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace FigurasGeometricas
 {
-    class Triangulo
-    {
-    }
+        class Triangulo //clase hija 
+        {
+            //esta clase requiere dos lados para funcionar
+            //creamos el lado2
+            private float lado1;
+
+            private float Lado2;
+
+            public float lado3;
+
+        }
 }

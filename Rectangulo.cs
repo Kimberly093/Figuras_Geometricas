@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FigurasGeometricas
 {
-    class Rectangulo:Figura // clase hija de figura
+    class Rectangulo : Figura //CLASE HIJA DE FIGURA
     {
         //esta clase requiere dos lados para funcionar
         //creamos el lado2
@@ -17,7 +17,7 @@ namespace FigurasGeometricas
             set
             {
                 //pregunta si el lado <0
-                if (value< 0)
+                if (value < 0)
                 {
                     lado2 = 0; //manda el valor a 0
                 } //NO EXISTEN LADOS NEGATIVOS
@@ -33,23 +33,30 @@ namespace FigurasGeometricas
             }
         }
 
-        //usamos el constructo de la clase padre
+        //usamos el constructor de la clase padre
         public Rectangulo(float lado1, float lado2)
-        {
-            //radio se va leer de la caja de texto con
-            //usando e boton guardar
-            this.Lado1 = lado1; //hace que unicamente el valor la cantidad del lado sea disponible 
-            //para la clase rectangulo, cuando no se use rectangulo la variable sera = 0
+        { //radio se va a leer de la caja de texto con
+            //usando el boton guardar
+            this.Lado1 = lado1; //hace que unicamente el valor la cantidad del lado sea disponible
+            //para la clase rectangulo, cuando no se use rectangulo la variable sera =0
             this.Lado2 = lado2;
         }
-        //vamos a usar los metodos de la clase padre
-        //vamos a sobreescribir el comportamiento de estos
+        //vamos a usar los métodos de la clase padre
+        //vamos a sobreesribir el comportamiento de estos
         public override float area()
         {
             return Lado1 * Lado2;
         }
 
-        public 
-    }
+        public override float perimetro()
+        {
+            return (2 * Lado1) + (2 * Lado2);
+        }
+
+        public override float volumen()
+        {
+            throw new NotImplementedException();
+            //ESTO ES UNA EXEPCION DE USO DEFAULT DEL SISTEMA
+        }
     }
 }

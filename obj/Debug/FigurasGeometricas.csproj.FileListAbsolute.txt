@@ -1,0 +1,3 @@
+C:\Users\DELL\Source\Repos\Kimberly093\Figuras_Geometricas\obj\Debug\FigurasGeometricas.csproj.AssemblyReference.cache
+C:\Users\DELL\Source\Repos\Kimberly093\Figuras_Geometricas\obj\Debug\FigurasGeometricas.Form1.resources
+C:\Users\DELL\Source\Repos\Kimberly093\Figuras_Geometricas\obj\Debug\FigurasGeometricas.csproj.GenerateResource.cache
